@@ -1,0 +1,27 @@
+default: &default
+  adapter: mysql2
+  reconnect: true
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: sake_map_dev
+  host: localhost
+  username:
+  password:
+
+test:
+  <<: *default
+  database: sake_map_test
+  host: localhost
+  username:
+  password:
+
+production:
+  <<: *default
+  database: sake_map
+  host: localhost
+  username:
+  password:
