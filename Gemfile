@@ -23,6 +23,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'gmaps4rails'
+gem 'geocoder'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'bullet'
